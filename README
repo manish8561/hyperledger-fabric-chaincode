@@ -1,0 +1,17 @@
+Very similarly, we have the GetAllAssets and ReadAsset functions.
+
+let result = await contract.evaluateTransaction('GetAllAssets'); 
+// ... 
+let result = await contract.evaluateTransaction('ReadAsset', asset); 
+// ...
+let result = await contract.submitTransaction('CreateAsset', 
+                                'asset101', 
+                                'violet', 
+                                '5', 
+                                'Snnorre 3', 
+                                '1300'); 
+The file also has some code fragments that allow passing comments into the code. So, we can call it using the following commands.
+
+node ledgerActions.js GetAllAssets 
+node ledgerActions.js ReadAsset asset1 
+node ledgerActions.js CreateAsset 
